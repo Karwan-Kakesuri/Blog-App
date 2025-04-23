@@ -1,0 +1,27 @@
+/* input and nav */
+.menu-items {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item:hover {
+  color: var(--gray-vd);
+  transition: 0.3s;
+}
+
+.search-bar {
+  width: 60%;
+}
+
+.nav {
+  width: 40%;
+}
+
+/* Posts */
+.posts-list {
+  list-style: none;
+}
+
+.post-cred {
+  letter-spacing: 0.6px;
+}

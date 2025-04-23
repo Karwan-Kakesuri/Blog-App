@@ -1,0 +1,126 @@
+/* @font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../Font/DanaPro10Wt/FarsiNumerals/Webfonts/woff2/DanaFaNum-Light.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+/* url("../Font/DanaPro10Wt/FarsiNumerals/Webfonts/woff/DanaFaNum-Light.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+ */
+/* font-display: swap;  */
+/* }  */
+/* @font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Font/DanaPro10Wt/FarsiNumerals/Webfonts/woff2/DanaFaNum-Regular.woff2")
+      format("woff2"), */
+/* FF39+,Chrome36+, Opera24+*/
+/* url("../Font/DanaPro10Wt/FarsiNumerals/Webfonts/woff/DanaFaNum-Regular.woff") format("woff"); FF3.6+, IE9, Chrome6+, Saf5.1+ */
+/* font-display: swap; */
+/* } */
+/* @font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../Font/DanaPro10Wt/FarsiNumerals/Webfonts/woff2/DanaFaNum-DemiBold.woff2") */
+/* format("woff2"), */
+/* FF39+,Chrome36+, Opera24+*/
+/* url("../Font/DanaPro10Wt/FarsiNumerals/Webfonts/woff/DanaFaNum-DemiBold.woff") format("woff"); FF3.6+, IE9, Chrome6+, Saf5.1+ */
+/* font-display: swap; */
+/* } */
+/* @font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../Font/DanaPro10Wt/FarsiNumerals/Webfonts/woff2/DanaFaNum-Bold.woff2") format("woff2"), */
+/* FF39+,Chrome36+, Opera24+*/
+/* url("../Font/DanaPro10Wt/FarsiNumerals/Webfonts/woff/DanaFaNum-Bold.woff") format("woff"); FF3.6+, IE9, Chrome6+, Saf5.1+ */
+/* font-display: swap; */
+/* } */
+
+/* -----------------font sizes------------------- */
+.f-size-h1 {
+  font-size: var(--h1);
+  line-height: 30px;
+}
+.f-size-h2 {
+  font-size: var(--h2);
+  line-height: 28px;
+}
+.f-size-body1 {
+  font-size: var(--body1);
+  line-height: 24px;
+}
+.f-size-body2 {
+  font-size: var(--body2);
+  line-height: 20px;
+}
+.f-size-body3 {
+  font-size: var(--body3);
+  line-height: 14px;
+}
+
+/* -----------------font weights------------------- */
+
+.f-f-weight-demibold {
+  font-weight: var(--w-bold);
+}
+.f-weight-demibold {
+  font-weight: var(--w-demibold);
+}
+.f-weight-regular {
+  font-weight: var(--w-regular);
+}
+.f-weight-light {
+  font-weight: var(--w-light);
+}
+/* -----------------colors------------------- */
+
+.f-color-primary {
+  color: var(--primary) !important;
+}
+.f-color-secondary {
+  color: var(--secondary);
+}
+.f-color-mute {
+  color: var(--mute);
+}
+.f-color-tertiary {
+  color: var(--tertiary);
+}
+.f-color-gray-vl {
+  color: var(--gray-vl);
+}
+.f-color-danger {
+  color: var(--danger);
+}
+.f-color-warning {
+  color: var(--warning);
+}
+.f-color-warning-light {
+  color: var(--orange-l);
+}
+.f-color-success {
+  color: var(--success);
+}
+.f-color-success-light {
+  color: var(--green-l);
+}
+
+.f-color-green-d {
+  color: var(--gren-d);
+}
+.f-color-red {
+  color: var(--red);
+}
+.f-color-info {
+  color: var(--info);
+}
+.f-color-primary-light {
+  color: var(--blue-l);
+}
+.f-color-white {
+  color: #fff;
+}
+.f-color-dark {
+  color: #000;
+}
