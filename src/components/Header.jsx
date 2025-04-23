@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Home from "./Home";
 
-const Header = () => {
+const Header = ({ onInputChange }) => {
   return (
     <header className="d-flex flex-column">
       <div className="d-flex justify-content-between align-items-center p-6 bg-blue-l">
@@ -12,7 +12,7 @@ const Header = () => {
         <p>Created by someone</p>
       </div>
       <div className="d-flex justify-content-between align-items-center p-6 bg-blue-vl gap-32">
-        <input className="search-bar input-field" />
+        <input className="search-bar input-field" onChange={onInputChange} />
         <nav className="nav">
           <ul className="d-flex justify-content-between menu-items">
             <li>
