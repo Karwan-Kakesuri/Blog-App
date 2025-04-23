@@ -1,0 +1,280 @@
+.btn {
+  font-family: dana, sans-serif;
+  font-size: var(--body1);
+  font-weight: var(--demibold);
+  width: 100%;
+  height: var(--p48);
+  transition: all 0.3s linear;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--p12);
+  /* clip-path: var(--path); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+/* radios */
+.empty-radio {
+  background-color: var(--white);
+  border: 1px solid var(--blue-vl);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3 linear;
+}
+
+.empty-radio.gray {
+  border: 1px solid var(--gray-vl);
+}
+.empty-radio.gray:hover {
+  background-color: var(--white);
+}
+.empty-radio.disabled {
+  background-color: var(--white);
+  border: 1px solid var(--gray-l);
+}
+.empty-radio:hover {
+  cursor: pointer;
+  background-color: var(--blue-ul);
+}
+
+.empty-radio.disabled:hover {
+  cursor: pointer;
+  background-color: var(--blue-ul);
+}
+
+.selected-radio {
+  background-color: var(--white);
+  border: 1px solid var(--blue-vl);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3 linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.selected-radio.gray {
+  border: 1px solid var(--gray-l);
+}
+.selected-radio.gray div {
+  background-color: var(--gray-l);
+}
+.selected-radio div {
+  width: 16px;
+  height: 16px;
+  border-radius: inherit;
+  background-color: var(--primary);
+}
+.selected-radio.disabled {
+  border: 1px solid var(--gray-ul);
+  pointer-events: none !important;
+}
+.selected-radio.disabled div {
+  background-color: var(--tertiary);
+  pointer-events: none !important;
+}
+
+/* variants */
+
+.btn.sm {
+  height: var(--p40);
+}
+.btn.fixed {
+  width: 160px;
+}
+.btn.disabled,
+.btn:disabled {
+  pointer-events: none;
+}
+.btn.hide {
+  display: none;
+}
+.btn.ghost {
+  background-color: transparent !important;
+}
+
+/* primary */
+.btn.primary {
+  color: var(--white);
+  background-color: var(--primary);
+}
+.btn.primary:focus {
+  outline: 2px solid var(--blue-d);
+}
+.btn.primary:hover {
+  background-color: var(--blue-d);
+}
+.btn.primary.disabled,
+.btn.primary:disabled {
+  background-color: var(--blue-ul);
+  color: var(--blue-vl);
+}
+
+.btn.primary.light {
+  color: var(--primary);
+  background-color: var(--blue-ul);
+}
+.btn.primary.light:hover {
+  background-color: var(--blue-vl);
+}
+.btn.primary.light:disabled,
+.btn.primary.light.disabled {
+  color: var(--blue-vl);
+}
+
+.btn.primary.outlined {
+  color: var(--primary);
+  background-color: transparent;
+  border: 2px solid var(--primary);
+}
+.btn.primary.outlined:hover {
+  background-color: var(--blue-ul);
+}
+
+.btn.primary.ghost:hover {
+  background-color: var(--blue-ul) !important;
+}
+
+/* danger */
+.btn.danger {
+  color: var(--white);
+  background-color: var(--red);
+  border: none;
+}
+.btn.danger:hover {
+  background-color: var(--red-d);
+}
+.btn.danger:disabled,
+.btn.danger.disabled {
+  pointer-events: none;
+  background-color: var(--red-ul);
+  color: var(--red-vl);
+}
+
+.btn.danger.outlined {
+  color: var(--red-l);
+  background-color: transparent;
+  border: 2px solid var(--red-l);
+}
+.btn.danger.outlined:hover {
+  background-color: var(--red-ul);
+}
+.btn.danger.outlined.disabled {
+  color: var(--red-ul);
+  border: 2px solid var(--red-vul);
+}
+
+.btn.danger.ghost:hover {
+  background-color: var(--red-ul) !important;
+}
+
+/* warning */
+
+.btn.warning {
+  color: var(--white);
+  background-color: var(--orange);
+  border: none;
+}
+.btn.warning:hover {
+  background-color: var(--orange-d);
+}
+
+/* success */
+
+.btn.success {
+  color: var(--white);
+  background-color: var(--green);
+  border: none;
+}
+.btn.success:hover {
+  background-color: var(--green-d);
+}
+
+.btn.success.light {
+  color: var(--green);
+  background-color: var(--green-ul);
+}
+.btn.success.light:hover {
+  background-color: var(--green-vl);
+}
+.btn.success.light:disabled,
+.btn.success.light.disabled {
+  color: var(--green-ul);
+  background-color: var(--green-vul);
+}
+
+/* icons */
+
+.btn.icon {
+  height: var(--p48);
+  width: var(--p48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn.icon.sm {
+  height: var(--p40);
+  width: var(--p40);
+}
+.btn.transparent {
+  background-color: transparent;
+}
+
+.btn.icon.danger {
+  background-color: var(--danger);
+}
+.btn.icon.danger.outlined {
+  background-color: transparent;
+}
+.btn.icon.danger.outlined:hover {
+  background-color: var(--red-ul);
+}
+.btn.icon.primary {
+  background-color: var(--primary);
+}
+
+.btn.icon.danger.light {
+  background-color: var(--red-ul);
+}
+.btn.icon.primary.light {
+  background-color: var(--blue-ul);
+}
+
+.btn.icon.danger.light:hover {
+  background-color: var(--red-vl);
+}
+.btn.icon.primary.light:hover {
+  background-color: var(--blue-vl);
+}
+
+.btn.icon.gray {
+  background-color: var(--gray-ul);
+}
+
+.footer-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 12px;
+  padding-inline: 12px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  width: 112px;
+}
+
+@media only screen and (min-width: 1056px) {
+  .btn {
+    width: 160px;
+  }
+  .btn.stretch {
+    width: 100%;
+  }
+  .show-lg {
+    display: flex !important;
+  }
+}
