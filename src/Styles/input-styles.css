@@ -1,0 +1,248 @@
+.input-field-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.input-field {
+  padding-block: 11px;
+  padding-inline: 12px;
+  border-radius: 12px;
+  color: var(--gray-d);
+  font-weight: var(--w-regular);
+  transition: all 0.5s;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 24px;
+  font-size: var(--body1);
+  border: 1px solid var(--gray-ul);
+}
+.input-field.table {
+  font-size: var(--body2);
+  border: none;
+  background-color: transparent;
+}
+
+.input-label {
+  position: relative;
+  margin-bottom: var(--sm);
+  margin-right: var(--sm);
+  font-size: var(--body2);
+  font-weight: var(--regular);
+  color: var(--secondary);
+}
+.input-field::placeholder {
+  color: var(--gray-l);
+  font-weight: var(--w-regular);
+  font-size: var(--body1);
+}
+.input-field:hover {
+  border: 1px solid var(--gray-vl);
+}
+.input-field.table:hover {
+  border: none;
+}
+.input-field:focus {
+  border: 1px solid var(--gray-vl);
+  outline: none;
+}
+.input-field.table:focus {
+  border: none;
+  outline: 1px solid var(--blue-ul);
+}
+.input-field:disabled {
+  background-color: var(--gray-ul);
+}
+.input-field-container.disabled div div {
+  background-color: var(--gray-ul);
+}
+.search-icon {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding-right: 14px;
+  padding-left: 12px;
+}
+.search-icon.v2 {
+  padding-right: 14px;
+  padding-left: 16px;
+}
+label#mobilelabel {
+  position: relative;
+}
+
+label#mobilelabel::after {
+  content: "98+";
+  font-size: 16px;
+  position: absolute;
+  color: var(--gray-l);
+  left: 12px;
+  top: 180%;
+}
+
+/* invalid field style */
+.invalid-field label {
+  color: var(--red);
+}
+.invalid-field input::placeholder {
+  color: var(--red) !important;
+}
+.invalid-field input {
+  border: 1px solid var(--red) !important;
+  color: var(--danger) !important;
+}
+.invalid-field textarea::placeholder {
+  color: var(--red);
+}
+.invalid-field textarea {
+  border: 1px solid var(--red);
+  color: var(--danger);
+}
+
+.invalid-field label#mobilelabel::after {
+  color: var(--danger);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+input.invalid-field {
+  border: 1px solid var(--red);
+}
+input.invalid-field::placeholder {
+  color: var(--red);
+}
+
+label#mobilelabel::before {
+  content: "";
+  font-size: 52px;
+  position: absolute;
+  color: var(--gray-l);
+  left: 55px;
+  top: 192%;
+  border-right: 2px solid #d3d3d3;
+  width: 1px;
+  height: 16px;
+}
+.invalid-field label#mobilelabel::before {
+  border-right: 2px solid var(--danger);
+}
+
+label#sheba-label::after {
+  content: "IR";
+  font-size: 16px;
+  position: absolute;
+  color: var(--gray);
+  left: 12px;
+  top: 180%;
+  font-weight: var(--demibold);
+}
+label#sheba-label::before {
+  content: "";
+  font-size: 52px;
+  position: absolute;
+  color: var(--gray-l);
+  left: 55px;
+  top: 192%;
+  border-right: 2px solid #d3d3d3;
+  width: 1px;
+  height: 16px;
+}
+
+input#mobile,
+input#sheba {
+  padding-left: 73px;
+  padding-top: 13px;
+  height: 48px;
+}
+input#cardNum::placeholder {
+  text-align: right;
+}
+/* date picker settings */
+
+.custom-container {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.custom-container .rmdp-input {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  padding-block: 23px;
+  border: 1px solid var(--gray-ul);
+  border-radius: 12px;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-size: var(--body1);
+  color: var(--secondary);
+  font-weight: var(--regular);
+  font-family: dana, sans-serif;
+}
+.custom-container .rmdp-input:disabled {
+  background-color: var(--gray-ul);
+}
+
+.custom-container .rmdp-input::placeholder {
+  color: var(--gray-l);
+  font-size: var(--body1);
+}
+
+/* form settings */
+
+input[type="number"]::placeholder {
+  text-align: right;
+}
+input[type="number"] {
+  direction: ltr;
+}
+input[type="email"]::placeholder {
+  text-align: right;
+}
+input[type="email"] {
+  direction: ltr;
+}
+
+.input-field-container.invalid-field textarea::placeholder {
+  color: var(--danger);
+}
+
+.checkbox-input-container {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox-input {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid var(--blue-vl);
+  border-radius: 6px;
+}
+
+.checkbox-input-container:hover {
+  cursor: pointer;
+}
+.checkbox-input-container:hover .checkbox-input {
+  background-color: var(--blue-ul);
+}
+
+.checkbox-input-container.checked .checkbox-input {
+  background-color: var(--blue-vl);
+}
