@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Home from "./Home";
 
 const Header = () => {
   return (
@@ -14,19 +16,19 @@ const Header = () => {
         <nav className="nav">
           <ul className="d-flex justify-content-between menu-items">
             <li>
-              <a href="/" className="menu-item f-color-mute">
+              <Link to="/Home" className="menu-item f-color-mute">
                 HOME
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" className="menu-item f-color-mute">
+              <Link to="/POST" className="menu-item f-color-mute">
                 POST
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" className="menu-item f-color-mute">
+              <Link to="/ABOUT" className="menu-item f-color-mute">
                 ABOUT
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
