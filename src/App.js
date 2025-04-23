@@ -69,7 +69,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App b-1-vlg">
       <Header onInputChange={onInputChange} />
       <Routes>
         <Route path="/Home" element={<Home posts={searchResult} />} />
