@@ -33,6 +33,20 @@ function App() {
       body: "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
     },
   ]);
+  const [search, setSearch] = useState("");
+  const [searchResult, setSearchResult] = useState();
+
+  const onInputChange = (event) => {
+    setSearch(event.target.value);
+  };
+  useEffect(() => {
+    const filteredPosts = posts.filter(
+      (post) =>
+        post.title.toLowerCase().includes(search.toLowerCase()) ||
+        post.body.toLowerCase().includes(search.toLowerCase())
+    );
+    setSearchResult(filteredPosts);
+  }, [search, posts]);
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -56,9 +70,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header onInputChange={onInputChange} />
       <Routes>
-        <Route path="/Home" element={<Home posts={posts} />} />
+        <Route path="/Home" element={<Home posts={searchResult} />} />
         <Route path="/PostPage/:id" element={<PostPage posts={posts} />} />
         <Route path="/About" element={<About />} />
       </Routes>
