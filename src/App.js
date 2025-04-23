@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -32,7 +33,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Home posts={posts} />
+      <Routes>
+        <Route path="/Home" element={<Home posts={posts} />} />
+        <Route path="/Post" element={<Home posts={posts} />} />
+        <Route path="/About" element={<About />} />
+      </Routes>
       <Footer />
     </div>
   );
