@@ -16,6 +16,10 @@ const PostPage = ({ posts }) => {
         <p className="f-color-tertiary f-size-body3 post-cred">{`By: ${post.author}`}</p>
         <p className="f-color-tertiary f-size-body3 post-cred">{post.date}</p>
       </div>
+      <div className="d-flex gap-8">
+        <button className="btn sm danger">Delete</button>
+        <button className="btn sm primary">Edit</button>
+      </div>
     </article>
   );
 };

@@ -80,7 +80,11 @@
 /* variants */
 
 .btn.sm {
-  height: var(--p40);
+  height: var(--p32);
+  font-size: var(--body2);
+  font-weight: var(--regular);
+  padding: 0;
+  width: 20%;
 }
 .btn.fixed {
   width: 160px;
