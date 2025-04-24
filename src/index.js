@@ -8,6 +8,7 @@ import "./index.css";
 import "./Styles/dpd-styles.css";
 import "./Styles/font-styles.css";
 import "./Styles/input-styles.css";
+import "./Styles/button-styles.css";
 import "./Styles/spacing-styles.css";
 import "./Styles/styles-specific.css";
 import "./Styles/universal-styles.css";
